@@ -4,6 +4,7 @@
   "description": "Allegro item finder",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx --config .eslintrc.json --fix --cache src --cache spec",
     "pre-push": "npm test && npm run lint"
