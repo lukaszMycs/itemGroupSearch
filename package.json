@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx --config .eslintrc.json --fix --cache src --cache spec"
+    "lint": "eslint . --ext .js,.jsx --config .eslintrc.json --fix --cache src --cache spec",
+    "pre-push": "npm test && npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
   },
   "repository": {
     "type": "git",
@@ -29,6 +35,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.23.0",
+    "husky": "^1.0.1",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0"
   }
