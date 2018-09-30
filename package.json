@@ -30,7 +30,10 @@
   "jest": {
     "verbose": true
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
