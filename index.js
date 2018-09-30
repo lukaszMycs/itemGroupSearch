@@ -10,8 +10,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/,', (req, res) => {
-  res.json({ req, res });
+app.get('/', (req, res) => {
+  const results = {
+    header: req.headers,
+    host: req.host,
+    hostname: req.hostname,
+    params: req.params,
+    query: req.query,
+  };
+  res.json(results);
 });
 
 app.listen(PORT, () => {
