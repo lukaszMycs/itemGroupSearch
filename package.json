@@ -32,8 +32,10 @@
     "verbose": true
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
