@@ -6,13 +6,13 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest",
+    "test": "jest && codecov",
     "lint": "eslint . --ext .js,.jsx --config .eslintrc.json --fix --cache src --cache spec",
     "pre-push": "npm test && npm run lint "
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm run pre-push"
     }
   },
   "repository": {
@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/krolikowskidamian/itemGroupSearch#readme",
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "dependencies": {
     "dotenv": "^6.0.0",
@@ -38,6 +40,7 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
+    "codecov": "^3.1.0",
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
