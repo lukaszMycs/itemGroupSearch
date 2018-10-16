@@ -5,6 +5,7 @@
     <a href="https://codecov.io/gh/krolikowskidamian/itemGroupSearch"><img src="https://codecov.io/gh/krolikowskidamian/itemGroupSearch/branch/production/graph/badge.svg" /></a>
     <a href="https://github.com/airbnb/javascript"><img src="https://badgen.net/badge/code%20style/airbnb-base/green" /></a>
     <a href="LICENSE"><img src="https://badgen.net/github/license/krolikowskidamian/itemGroupSearch" /></a>
+    <img src="https://circleci.com/gh/krolikowskidamian/itemGroupSearch.svg?style=svg" />
 </p>
 
 <p align="center">Application with helps you to find items in Allegro and grouping them with user profiles.</p>
